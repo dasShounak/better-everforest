@@ -1,0 +1,66 @@
+.theme-dark {
+  --background-primary: #1a232a;
+  --background-primary-alt: #1a232a;
+  --background-secondary: #1a232a;
+  --background-secondary-alt: #1a232a;
+  --color-color: rgb(93, 232, 174);
+
+  /* text */
+  --italic-color: rgb(217, 181, 103);
+  --bold-color: rgb(239, 137, 137);
+  --bold-italic-color: rgb(196, 226, 105);
+
+  /* links */
+  --link-color: rgb(93, 232, 174);
+  --link-color-hover: rgb(93, 232, 174);
+  --link-decoration: none;
+  --link-decoration-hover: none;
+  --link-unresolved-color: rgb(93, 232, 174);
+  --link-unresolved-opacity: 0.6;
+  --link-external-color: hsl(155, 75%, 64%);
+  --link-external-color-hover: rgb(93, 232, 174);
+  --link-external-decoration: none;
+  --link-external-decoration-hover: none;
+
+  /* tag */
+  --tag-color: rgba(220, 242, 164, 0.704);
+  --tag-background: rgba(35, 138, 83, 0.133);
+  --tag-padding-x: 8px;
+  --tag-padding-y: 2px;
+
+  /* graph */
+  --graph-node: #5de8ae;
+  --graph-node-unresolved: #a88bdf;
+  --graph-node-focused: #a0b2b7;
+  --graph-node-tag: #b2d957;
+
+  /* blockquote */
+  --blockquote-border-color: rgb(100, 186, 150);
+
+  /* checkbox */
+  --checkbox-color-hover: var(--faded-blue);
+}
+
+/* blockquote font colors */
+.cm-quote.cm-em {
+  --blockquote-color: var(--italic-color);
+}
+
+.cm-quote.cm-strong {
+  --blockquote-color: var(--bold-color);
+}
+
+.cm-quote.cm-strong.cm-em {
+  --blockquote-color: var(--bold-italic-color);
+}
+
+/* bold-italic font */
+.theme-dark .cm-em.cm-strong {
+  color: var(--bold-italic-color);
+}
+
+.markdown-source-view.mod-cm6 .cm-indent::before,
+.markdown-rendered.show-indentation-guide li > ul::before,
+.markdown-rendered.show-indentation-guide li > ol::before {
+  border-right: 1px solid #29353d;
+}
